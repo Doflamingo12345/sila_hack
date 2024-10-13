@@ -37,17 +37,26 @@
 ```plaintext
 project_root/
 │
+├── .idea/
 ├── data/
-│   ├── detect/
+├── runs/detect
 │   ├── train/
-│   ├── val/
-├── runs/
+│   ├── train2/
+│   ├── train3/
+├── train/
+│   ├── images/
+│   ├── labels/
+├── val/
+│   ├── images/
+│   ├── labels/
+├── LICENSE
+├── README.md
 ├── best.pt
 ├── data.yaml
 ├── defects.csv
 ├── hack-piter.ipynb
-├── LICENSE
-├── README.md
+├── packages.txt
+├── requirements.txt
 ├── web_streamlit.py
 └── yolo11n.pt
 ```
@@ -104,6 +113,11 @@ results = model(image)
 ```bash
 streamlit run web_streamlit.py
 ```
+
+## Деплой
+Приложение задеплоено на платформе Streamlit Cloud и доступно по этой ссылке:
+
+https://silahack.streamlit.app/
 
 ## Лицензия
 
